@@ -1,0 +1,13 @@
+analyzer:
+  exclude:
+    - build/**
+    - web/**
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    # Widgets const não são reconstruídos à toa: regra ativa para ajudar a performance.
+    prefer_const_constructors: true
+    prefer_const_literals_to_create_immutables: true
+    cancel_subscriptions: true
+    close_sinks: true
